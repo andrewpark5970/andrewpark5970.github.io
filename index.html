@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andrew Park | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #861F41;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    nav {
+      background: #222;
+      padding: 12px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #E5751F;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      color: #861F41;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #E5751F;
+      padding-bottom: 8px;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .skill {
+      background: #eee;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    .project {
+      margin-bottom: 25px;
+      padding: 18px;
+      border-left: 5px solid #861F41;
+      background: #fafafa;
+      border-radius: 8px;
+    }
+
+    .project h3 {
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    .button {
+      display: inline-block;
+      background: #861F41;
+      color: white;
+      padding: 10px 16px;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 10px;
+      margin-right: 10px;
+    }
+
+    .button:hover {
+      background: #E5751F;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #222;
+      color: white;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 700px) {
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      section {
+        margin: 20px 12px;
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Andrew Park</h1>
+    <p>Computer Science Student at Virginia Tech | Aspiring Software Engineer | Interested in UI/UX, Human-Computer Interaction, and Problem Solving</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a Computer Science student at Virginia Tech with a strong interest in software engineering,
+      data structures, user-centered design, and building technology that solves real problems. Through
+      my coursework and projects, I have developed experience in Java, C, assembly programming,
+      algorithms, debugging, and software design.
+    </p>
+    <p>
+      I am especially interested in creating systems that are both technically strong and easy for users
+      to understand. My goal is to continue growing as a developer while contributing to meaningful
+      software projects in collaborative environments.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <span class="skill">Java</span>
+      <span class="skill">Python</span>
+      <span class="skill">C</span>
+      <span class="skill">C++</span>
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">Git</span>
+      <span class="skill">SQL</span>
+      <span class="skill">MATLAB</span>
+      <span class="skill">Bash</span>
+      <span class="skill">UI/UX Design</span>
+      <span class="skill">Excel</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>DNA Tree Data Structure</h3>
+      <p>
+        Implemented a 5-way tree structure in Java to store and search DNA sequences. The project involved
+        recursive insertion, deletion, prefix searching, node splitting, and node merging while following
+        object-oriented design principles.
+      </p>
+      <p><strong>Technologies:</strong> Java, Data Structures, Recursion</p>
+    </div>
+
+    <div class="project">
+      <h3>External Sorting Project</h3>
+      <p>
+        Developed a Java program designed to sort large binary data files using limited memory. This project
+        strengthened my understanding of file I/O, memory constraints, sorting algorithms, and testing.
+      </p>
+      <p><strong>Technologies:</strong> Java, File I/O, Sorting Algorithms</p>
+    </div>
+
+    <div class="project">
+      <h3>Memory Manager / Buddy Allocator</h3>
+      <p>
+        Designed a memory manager that stores variable-length records in a memory pool and returns handles
+        for later access. The project involved free block management, allocation, deallocation, and efficient
+        use of limited memory.
+      </p>
+      <p><strong>Technologies:</strong> Java, Memory Management, Algorithms</p>
+    </div>
+
+    <div class="project">
+      <h3>Beginner-Friendly Drone Control Interface</h3>
+      <p>
+        Designed a user interface concept for AI glasses that help beginners control drones using simple
+        visual guidance and hand gesture recognition instead of traditional joysticks.
+      </p>
+      <p><strong>Technologies:</strong> UI/UX Design, HCI, Prototyping</p>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>
+      My resume highlights my education, technical skills, programming projects, and relevant coursework.
+    </p>
+    <a class="button" href="resume.pdf" target="_blank">View Resume</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:andrewpark5970@gmail.com">andrewpark5970@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/andrewpark5970" target="_blank">github.com/andrewpark5970</a></p>
+    <p>LinkedIn: <a href="www.linkedin.com/in/andrew-park-640837330" target="_blank">linkedin.com/in/andrew-park-640837330</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Andrew Park. All rights reserved.</p>
+  </footer>
+</body>
+</html>
